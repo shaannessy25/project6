@@ -24,10 +24,8 @@ function draw () {
   stroke(75);
   fill(marcherColor);
   ellipse(marcher.x + marcher.speed, marcher.y, marcher.size, marcher.size);
-  
-  while(marcher.x <= width){
-    marcher.speed++;
+
     
-  }
+  
   // #3 Use a while loop to draw clones of marcher
 }
