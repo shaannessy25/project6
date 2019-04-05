@@ -7,7 +7,7 @@ function setup () {
     x: 25,
     y: 25,
     size: 30,
-    speed: 1,
+    speed: 7,
   }
   
   backgroundColor = color("lightgrey");
@@ -23,9 +23,19 @@ function draw () {
 
   stroke(75);
   fill(marcherColor);
-  ellipse(marcher.x + marcher.speed, marcher.y, marcher.size, marcher.size);
+  ellipse(marcher.x, marcher.y, marcher.size, marcher.size);
 
-    
-  
+  marcher.x = marcher.x + marcher.speed;
+
+if(marcher.x >= width){
+  marcher.speed = -7;
+
+} else if(marcher.x < 1){
+  marcher.speed = 7;
+}
+
+
+
   // #3 Use a while loop to draw clones of marcher
+
 }
