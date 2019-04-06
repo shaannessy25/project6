@@ -32,37 +32,26 @@ if(marcher.x >= width){   //conditional statement that makes the object move acc
 
   } else if(marcher.x < 1){
   marcher.speed = 7;
-
-}
-
-var x = 0;
-var y = 0;
-while (x <= width){         //this loop makes a colored grid
-    fill(0, 204, 255, 100);
-    rect(x, y,20, 20);
-    x += 20;
-   
+  
 }
 
 var cloneY = 0;
 while (cloneY < width){     //this loop creates multiple cicles in the y direction
   fill(0,122,122);
-  ellipse(marcher.x,cloneY, marcher.size, marcher.size);
+  ellipse(marcher.x, cloneY, marcher.size, marcher.size);
   cloneY+=45;
 
 }
 
 
+var x = 0;
+var y = 0;
+while (x <= width){         //this loop makes a colored grid
+    fill(0, 204, 255, 100);
+    rect(x, y, 20, 20);
+    x += 25;
 
 
 
-
-
-
-
-
-
-
-
-
+}
 }
