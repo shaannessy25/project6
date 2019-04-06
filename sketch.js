@@ -25,17 +25,24 @@ function draw () {
   fill(marcherColor);
   ellipse(marcher.x, marcher.y, marcher.size, marcher.size);
 
-  marcher.x = marcher.x + marcher.speed;
+  marcher.x = marcher.x + marcher.speed; //updates the position of the object based on the speed
 
-if(marcher.x >= width){
+if(marcher.x >= width){   //conditional statement that makes the object move accrose the canvas
   marcher.speed = -7;
 
 } else if(marcher.x < 1){
   marcher.speed = 7;
+
 }
 
+var cloneY;
+cloneY = 0;
+marcher.y = marcher.y + cloneY;
 
+while(cloneY >= 0){
+  ellipse(marcher.x, cloneY, marcher.size, marcher.size);
+  cloneY = cloneY + 1;
 
-  // #3 Use a while loop to draw clones of marcher
+}
 
 }
