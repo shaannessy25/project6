@@ -30,19 +30,39 @@ function draw () {
 if(marcher.x >= width){   //conditional statement that makes the object move accrose the canvas
   marcher.speed = -7;
 
-} else if(marcher.x < 1){
+  } else if(marcher.x < 1){
   marcher.speed = 7;
 
 }
 
-var cloneY;
-cloneY = 0;
-marcher.y = marcher.y + cloneY;
+var x = 0;
+var y = 0;
+while (x <= width){         //this loop makes a colored grid
+    fill(0, 204, 255, 100);
+    rect(x, y,20, 20);
+    x += 20;
+   
+}
 
-while(cloneY >= 0){
-  ellipse(marcher.x, cloneY, marcher.size, marcher.size);
-  cloneY = cloneY + 1;
+var cloneY = 0;
+while (cloneY < width){     //this loop creates multiple cicles in the y direction
+  fill(0,122,122);
+  ellipse(marcher.x,cloneY, marcher.size, marcher.size);
+  cloneY+=45;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
