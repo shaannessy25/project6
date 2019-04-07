@@ -43,15 +43,19 @@ while (cloneY < width){     //this loop creates multiple cicles in the y directi
 
 }
 
+for(var x = 0; x < width; x += 25){
+  fill(0,233,222,100);
+for( var y = 0; y < height; y += 25){
+  rect(x, y, 25, 25);
 
-var x = 0;
-var y = 0;
-while (x <= width){         //this loop makes a colored grid
-    fill(0, 204, 255, 100);
-    rect(x, y, 20, 20);
-    x += 25;
+}
+
+}
 
 
 
 }
-}
+
+
+
+
