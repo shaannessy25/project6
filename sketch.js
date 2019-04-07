@@ -44,7 +44,7 @@ while (cloneY < width){     //this loop creates multiple cicles in the y directi
 }
 
 for(var x = 0; x < width; x += 25){
-  fill(0,233,222,100);
+  fill(212, 172, 13, 76);
 for( var y = 0; y < height; y += 25){
   rect(x, y, 25, 25);
 
