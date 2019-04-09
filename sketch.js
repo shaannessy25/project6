@@ -34,6 +34,14 @@ if(marcher.x >= width){   //conditional statement that makes the object move acc
   marcher.speed = 7;
   
 }
+for(var x = 0; x < width; x += 25){
+  fill(212, 172, 130);
+for( var y = 0; y < height; y += 25){
+  rect(x, y, 25, 25);
+
+}
+
+}
 
 var cloneY = 0;
 while (cloneY < width){     //this loop creates multiple cicles in the y direction
@@ -43,14 +51,7 @@ while (cloneY < width){     //this loop creates multiple cicles in the y directi
 
 }
 
-for(var x = 0; x < width; x += 25){
-  fill(212, 172, 13, 76);
-for( var y = 0; y < height; y += 25){
-  rect(x, y, 25, 25);
 
-}
-
-}
 
 
 
